@@ -6,7 +6,8 @@ This repository contains a collection of mathematical visualizations created usi
 
 | Preview | Description |
 |---------|-------------|
-| ![Image](https://github.com/user-attachments/assets/1a3741fa-56c5-49ce-9ac3-dc5f9161b4f7) | **3D Surface with Tangent Plane** <br> Visualization of a 3D surface with its tangent plane at a specific point. The plot shows: <br> • 3D quadratic surface <br> • Red tangent plane at point (-7, 0) <br> • Interactive 3D rotation capability |
+| <img src="https://github.com/user-attachments/assets/7bd42f00-ce03-47d5-964a-9be85fc5ff27" width="200"/> | **2D Function with Tangent Line** <br> Visualization of a 2D quadratic function with its tangent line. Features: <br> • Smooth quadratic curve <br> • Red tangent line at point (5, 0) <br> • Clear intersection point marking |
+| <img src="https://github.com/user-attachments/assets/1a3741fa-56c5-49ce-9ac3-dc5f9161b4f7" width="200"/> | **3D Surface with Tangent Plane** <br> Visualization of a 3D surface with its tangent plane at a specific point. The plot shows: <br> • 3D quadratic surface <br> • Red tangent plane at point (-7, 0) <br> • Interactive 3D rotation capability |
 | 🎯 Coming soon... | Your next visualization here! |
 
 ## 🛠️ Setup and Requirements
