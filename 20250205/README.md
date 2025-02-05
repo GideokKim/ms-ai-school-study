@@ -10,6 +10,7 @@ This directory contains implementations and visualizations of neural network tra
 | <img src="https://github.com/user-attachments/assets/786d6398-b3b3-498a-94dc-59fe63233931" width="400"/> | **Two-Layer Network Architecture** <br> Visualization of the network structure: <br> • Input layer (784 neurons) <br> • Hidden layer (50 neurons) <br> • Output layer (10 neurons) |
 | <img src="https://github.com/user-attachments/assets/a012adcc-733b-48d7-9573-15f72b191c95" width="400"/> | **Gradient Descent Visualization** <br> Interactive visualization of optimization: <br> • 3D surface plot with descent path <br> • Contour plot with convergence <br> • Start point to minimum trajectory |
 | <img src="https://github.com/user-attachments/assets/89e37ba0-c3aa-4983-9095-d84d1e527ba5" width="400"/> | **Stochastic Gradient Descent** <br> Visualization of SGD optimization: <br> • Random sampling for gradients <br> • Noisy descent trajectory <br> • Exploration vs exploitation |
+| <img src="https://github.com/user-attachments/assets/0278b689-33ba-4623-a646-55096a16920c" width="400"/> | **Momentum Gradient Descent** <br> Visualization of momentum-based optimization: <br> • Momentum acceleration effect <br> • Smoother convergence path <br> • Oscillation near minimum |
 | 🎯 Coming soon... | Next visualization here! |
 
 ## 🛠️ Implementation Details
@@ -42,6 +43,14 @@ batch_size = 10      # Mini-batch size
 noise_scale = 0.5    # Random sampling scale
 ```
 
+### Momentum Gradient Descent Parameters
+```python
+lr = 0.1             # Learning rate for Momentum
+momentum = 0.9       # Momentum coefficient
+iterations = 30      # Number of steps
+function = "1/100 * x^2 + y^2"  # Target function
+```
+
 ## 📁 Directory Structure
 ```
 20250205/
@@ -49,7 +58,9 @@ noise_scale = 0.5    # Random sampling scale
 ├── train_neuralnet.ipynb
 ├── gradient_descent_2d.ipynb
 ├── stochastic_gradient_descent_2d.ipynb
+├── momentum_gradient_descent_2d.ipynb
 ├── two_layer_net.py
+├── optimizer.py
 ```
 
 ## 🎨 Visualization Features
@@ -61,12 +72,18 @@ noise_scale = 0.5    # Random sampling scale
 - SGD vs standard gradient descent comparison
 - Mini-batch gradient computation
 - Stochastic exploration visualization
+- Momentum-based optimization visualization
+- Acceleration and deceleration effects
+- Oscillatory behavior near convergence
 
 ## 📊 Results
 - Final Training Accuracy: ~94.7%
 - Final Test Accuracy: ~94.6%
 - Convergence achieved within 17 epochs
 - Gradient Descent converges to (0, 0) minimum
+- Momentum GD shows smoother convergence
+- Final position: (-0.53, 0.00)
+- Minimum value: 0.002831
 
 ## 🔍 Key Learning Points
 1. Implementation of backpropagation
@@ -78,6 +95,9 @@ noise_scale = 0.5    # Random sampling scale
 7. Stochastic vs deterministic optimization
 8. Mini-batch gradient computation
 9. Exploration-exploitation trade-off
+10. Momentum's role in optimization
+11. Acceleration in gradient descent
+12. Handling oscillation in optimization
 
 ---
 *Part of the MS AI School deep learning curriculum* 
