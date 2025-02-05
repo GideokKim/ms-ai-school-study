@@ -11,6 +11,7 @@ This directory contains implementations and visualizations of neural network tra
 | <img src="https://github.com/user-attachments/assets/6e6c50bb-c2d3-4963-a40e-311f2ce64122" width="400"/> | **Gradient Descent Visualization** <br> Interactive visualization of optimization: <br> • 3D surface plot with descent path <br> • Contour plot with convergence <br> • Start point to minimum trajectory |
 | <img src="https://github.com/user-attachments/assets/8a028acd-cc9c-4261-9212-163018daf80c" width="400"/> | **Stochastic Gradient Descent** <br> Visualization of SGD optimization: <br> • Random sampling for gradients <br> • Noisy descent trajectory <br> • Exploration vs exploitation |
 | <img src="https://github.com/user-attachments/assets/d39171d2-bcf6-4cea-b2d6-6f2f9b949d82" width="400"/> | **Momentum Gradient Descent** <br> Visualization of momentum-based optimization: <br> • Momentum acceleration effect <br> • Smoother convergence path <br> • Oscillation near minimum |
+| <img src="https://github.com/user-attachments/assets/feba54f8-b84f-4475-b5c7-114ba1e6d9fa" width="400"/> | **AdaGrad Gradient Descent** <br> Visualization of AdaGrad optimization: <br> • Adaptive learning rates <br> • Parameter-specific updates <br> • Efficient early convergence |
 | 🎯 Coming soon... | Next visualization here! |
 
 ## 🛠️ Implementation Details
@@ -51,6 +52,13 @@ iterations = 30      # Number of steps
 function = "1/10 * x^2 + y^2"  # Target function
 ```
 
+### AdaGrad Gradient Descent Parameters
+```python
+lr = 1             # Initial learning rate for AdaGrad
+iterations = 30      # Number of steps
+function = "1/10 * x^2 + y^2"  # Target function
+```
+
 ## 📁 Directory Structure
 ```
 20250205/
@@ -59,6 +67,7 @@ function = "1/10 * x^2 + y^2"  # Target function
 ├── gradient_descent_2d.ipynb
 ├── stochastic_gradient_descent_2d.ipynb
 ├── momentum_gradient_descent_2d.ipynb
+├── adagrad_gradient_descent_2d.ipynb
 ├── two_layer_net.py
 ├── optimizer.py
 ```
@@ -75,6 +84,9 @@ function = "1/10 * x^2 + y^2"  # Target function
 - Momentum-based optimization visualization
 - Acceleration and deceleration effects
 - Oscillatory behavior near convergence
+- AdaGrad adaptive learning rate visualization
+- Parameter-specific learning rate effects
+- Automatic learning rate adjustment
 
 ## 📊 Results
 - Final Training Accuracy: ~94.7%
@@ -84,6 +96,10 @@ function = "1/10 * x^2 + y^2"  # Target function
 - Momentum GD shows smoother convergence
 - Final position: (-0.53, 0.00)
 - Minimum value: 0.002831
+- AdaGrad shows efficient early-stage optimization
+- Adaptive learning rates prevent overshooting
+- Final position: (-0.01, 0.00)
+- Minimum value: 0.000001
 
 ## 🔍 Key Learning Points
 1. Implementation of backpropagation
@@ -98,6 +114,9 @@ function = "1/10 * x^2 + y^2"  # Target function
 10. Momentum's role in optimization
 11. Acceleration in gradient descent
 12. Handling oscillation in optimization
+13. Adaptive learning rate optimization
+14. Parameter-specific learning rates
+15. Handling different scale features
 
 ---
 *Part of the MS AI School deep learning curriculum* 
