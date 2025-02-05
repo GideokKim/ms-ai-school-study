@@ -6,8 +6,9 @@ This directory contains implementations and visualizations of neural network tra
 
 | Preview | Description |
 |---------|-------------|
-| <img src="https://github.com/user-attachments/assets/c0f5d3cf-fdcf-4271-9c35-3ada79e27cdb" width="200"/> | **Training vs Test Accuracy** <br> Visualization of the learning process showing: <br> • Training accuracy progression <br> • Test accuracy comparison <br> • Clear convergence pattern |
-| <img src="https://github.com/user-attachments/assets/786d6398-b3b3-498a-94dc-59fe63233931" width="200"/> | **Two-Layer Network Architecture** <br> Visualization of the network structure: <br> • Input layer (784 neurons) <br> • Hidden layer (50 neurons) <br> • Output layer (10 neurons) |
+| <img src="https://github.com/user-attachments/assets/c0f5d3cf-fdcf-4271-9c35-3ada79e27cdb" width="400"/> | **Training vs Test Accuracy** <br> Visualization of the learning process showing: <br> • Training accuracy progression <br> • Test accuracy comparison <br> • Clear convergence pattern |
+| <img src="https://github.com/user-attachments/assets/786d6398-b3b3-498a-94dc-59fe63233931" width="400"/> | **Two-Layer Network Architecture** <br> Visualization of the network structure: <br> • Input layer (784 neurons) <br> • Hidden layer (50 neurons) <br> • Output layer (10 neurons) |
+| <img src="https://github.com/user-attachments/assets/a012adcc-733b-48d7-9573-15f72b191c95" width="400"/> | **Gradient Descent Visualization** <br> Interactive visualization of optimization: <br> • 3D surface plot with descent path <br> • Contour plot with convergence <br> • Start point to minimum trajectory |
 | 🎯 Coming soon... | Next visualization here! |
 
 ## 🛠️ Implementation Details
@@ -25,15 +26,20 @@ batch_size = 100     # Mini-batch size
 learning_rate = 0.1  # Learning rate
 ```
 
+### Gradient Descent Parameters
+```python
+lr = 0.9             # Learning rate for GD
+iterations = 30      # Number of steps
+function = "1/100 * x^2 + y^2"  # Target function
+```
+
 ## 📁 Directory Structure
 ```
 20250205/
 ├── README.md
 ├── train_neuralnet.ipynb
+├── gradient_descent_2d.ipynb
 ├── two_layer_net.py
-└── images/
-    ├── training_accuracy.png
-    └── network_architecture.png
 ```
 
 ## 🎨 Visualization Features
@@ -41,17 +47,21 @@ learning_rate = 0.1  # Learning rate
 - Clear epoch vs accuracy visualization
 - Training/test accuracy comparison
 - Distinct line styles for different metrics
+- Interactive 3D gradient descent visualization
 
 ## 📊 Results
 - Final Training Accuracy: ~94.7%
 - Final Test Accuracy: ~94.6%
 - Convergence achieved within 17 epochs
+- Gradient Descent converges to (0, 0) minimum
 
 ## 🔍 Key Learning Points
 1. Implementation of backpropagation
 2. Batch processing for efficient training
 3. Comparison of training vs test accuracy
 4. Visualization of learning progress
+5. Understanding optimization landscapes
+6. Gradient descent behavior in 2D/3D
 
 ---
 *Part of the MS AI School deep learning curriculum* 
