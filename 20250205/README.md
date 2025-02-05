@@ -8,9 +8,9 @@ This directory contains implementations and visualizations of neural network tra
 |---------|-------------|
 | <img src="https://github.com/user-attachments/assets/c0f5d3cf-fdcf-4271-9c35-3ada79e27cdb" width="400"/> | **Training vs Test Accuracy** <br> Visualization of the learning process showing: <br> • Training accuracy progression <br> • Test accuracy comparison <br> • Clear convergence pattern |
 | <img src="https://github.com/user-attachments/assets/786d6398-b3b3-498a-94dc-59fe63233931" width="400"/> | **Two-Layer Network Architecture** <br> Visualization of the network structure: <br> • Input layer (784 neurons) <br> • Hidden layer (50 neurons) <br> • Output layer (10 neurons) |
-| <img src="https://github.com/user-attachments/assets/a012adcc-733b-48d7-9573-15f72b191c95" width="400"/> | **Gradient Descent Visualization** <br> Interactive visualization of optimization: <br> • 3D surface plot with descent path <br> • Contour plot with convergence <br> • Start point to minimum trajectory |
-| <img src="https://github.com/user-attachments/assets/89e37ba0-c3aa-4983-9095-d84d1e527ba5" width="400"/> | **Stochastic Gradient Descent** <br> Visualization of SGD optimization: <br> • Random sampling for gradients <br> • Noisy descent trajectory <br> • Exploration vs exploitation |
-| <img src="https://github.com/user-attachments/assets/0278b689-33ba-4623-a646-55096a16920c" width="400"/> | **Momentum Gradient Descent** <br> Visualization of momentum-based optimization: <br> • Momentum acceleration effect <br> • Smoother convergence path <br> • Oscillation near minimum |
+| <img src="https://github.com/user-attachments/assets/6e6c50bb-c2d3-4963-a40e-311f2ce64122" width="400"/> | **Gradient Descent Visualization** <br> Interactive visualization of optimization: <br> • 3D surface plot with descent path <br> • Contour plot with convergence <br> • Start point to minimum trajectory |
+| <img src="https://github.com/user-attachments/assets/8a028acd-cc9c-4261-9212-163018daf80c" width="400"/> | **Stochastic Gradient Descent** <br> Visualization of SGD optimization: <br> • Random sampling for gradients <br> • Noisy descent trajectory <br> • Exploration vs exploitation |
+| <img src="https://github.com/user-attachments/assets/d39171d2-bcf6-4cea-b2d6-6f2f9b949d82" width="400"/> | **Momentum Gradient Descent** <br> Visualization of momentum-based optimization: <br> • Momentum acceleration effect <br> • Smoother convergence path <br> • Oscillation near minimum |
 | 🎯 Coming soon... | Next visualization here! |
 
 ## 🛠️ Implementation Details
@@ -30,25 +30,25 @@ learning_rate = 0.1  # Learning rate
 
 ### Gradient Descent Parameters
 ```python
-lr = 0.9             # Learning rate for GD
+lr = 0.4             # Learning rate for GD
 iterations = 30      # Number of steps
-function = "1/100 * x^2 + y^2"  # Target function
+function = "1/10 * x^2 + y^2"  # Target function
 ```
 
 ### Stochastic Gradient Descent Parameters
 ```python
-lr = 0.9             # Learning rate for SGD
-iterations = 100     # Number of steps
+lr = 0.4             # Learning rate for SGD
 batch_size = 10      # Mini-batch size
-noise_scale = 0.5    # Random sampling scale
+iterations = 30      # Number of steps
+function = "1/10 * x^2 + y^2"  # Target function
 ```
 
 ### Momentum Gradient Descent Parameters
 ```python
-lr = 0.1             # Learning rate for Momentum
+lr = 0.04            # Learning rate for Momentum
 momentum = 0.9       # Momentum coefficient
 iterations = 30      # Number of steps
-function = "1/100 * x^2 + y^2"  # Target function
+function = "1/10 * x^2 + y^2"  # Target function
 ```
 
 ## 📁 Directory Structure
