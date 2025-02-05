@@ -16,6 +16,7 @@ Daily code repository for MS AI School learning journey, focusing on practical i
 
 | Date | Topic | Description |
 |------|-------|-------------|
+| [20250205](./20250205) | Neural Network Implementation | • Two-layer neural network <br> • MNIST classification <br> • Training visualization |
 | [20250204](./20250204) | Mathematical Visualization | • 2D/3D function visualization <br> • Tangent lines and planes <br> • Gradient visualization |
 | Coming soon... | Next topics | Stay tuned! |
 
