@@ -14,7 +14,7 @@ This directory contains implementations and visualizations of neural network tra
 | <img src="https://github.com/user-attachments/assets/feba54f8-b84f-4475-b5c7-114ba1e6d9fa" width="400"/> | **AdaGrad Gradient Descent** <br> Visualization of AdaGrad optimization: <br> • Adaptive learning rates <br> • Parameter-specific updates <br> • Efficient early convergence |
 | <img src="https://github.com/user-attachments/assets/19e771fb-c695-4591-b997-056367b79707" width="400"/> | **Nesterov Accelerated Gradient Descent** <br> Visualization of Nesterov optimization: <br> • Look-ahead gradient computation <br> • Enhanced momentum correction <br> • Improved convergence stability |
 | <img src="https://github.com/user-attachments/assets/d5c71b37-7fb1-4e16-bcb4-b4234501cc5d" width="400"/> | **RMSprop Gradient Descent** <br> Visualization of RMSprop optimization: <br> • Adaptive learning with decay <br> • Moving average of squared gradients <br> • Stable learning rate adjustment |
-| 🎯 Coming soon... | Next visualization here! |
+| <img src="https://github.com/user-attachments/assets/99882e0a-0c1a-4a08-a8ca-23770abbc25f" width="400"/> | **Adam Gradient Descent** <br> Visualization of Adam optimization: <br> • Adaptive learning with momentum <br> • Moving average of first/second moments <br> • Bias correction for better convergence |
 
 ## 🛠️ Implementation Details
 
@@ -77,6 +77,15 @@ iterations = 30      # Number of steps
 function = "1/10 * x^2 + y^2"  # Target function
 ```
 
+### Adam Gradient Descent Parameters
+```python
+lr = 0.4             # Learning rate for Adam
+beta1 = 0.9          # Exponential decay rate for first moment
+beta2 = 0.999        # Exponential decay rate for second moment
+iterations = 30      # Number of steps
+function = "1/10 * x^2 + y^2"  # Target function
+```
+
 ## 📁 Directory Structure
 ```
 20250205/
@@ -88,6 +97,7 @@ function = "1/10 * x^2 + y^2"  # Target function
 ├── adagrad_gradient_descent_2d.ipynb
 ├── nesterov_gradient_descent_2d.ipynb
 ├── rmsprop_gradient_descent_2d.ipynb
+├── adam_gradient_descent_2d.ipynb
 ├── two_layer_net.py
 ├── optimizer.py
 ```
@@ -114,6 +124,10 @@ function = "1/10 * x^2 + y^2"  # Target function
 - Moving average gradient computation
 - Decay rate effects demonstration
 - Stable learning rate adaptation
+- Adam adaptive moment estimation
+- First/second moment computation
+- Bias correction visualization
+- Combined momentum and RMSprop effects
 
 ## 📊 Results
 - Final Training Accuracy: ~94.7%
@@ -133,6 +147,10 @@ function = "1/10 * x^2 + y^2"  # Target function
 - Minimum value: 0.000004
 - RMSprop shows stable convergence behavior
 - Moving average prevents learning rate oscillation
+- Final position: (-0.01, 0.00)
+- Minimum value: 0.000001
+- Adam shows robust convergence behavior
+- Combines benefits of momentum and RMSprop
 - Final position: (-0.01, 0.00)
 - Minimum value: 0.000001
 
@@ -158,6 +176,10 @@ function = "1/10 * x^2 + y^2"  # Target function
 19. Moving average in optimization
 20. Decay rate importance
 21. RMSprop's adaptive learning
+22. Adam's moment estimation
+23. Bias correction importance
+24. Adaptive learning with momentum
+25. Combined optimization techniques
 
 ---
 *Part of the MS AI School deep learning curriculum* 
