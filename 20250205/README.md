@@ -12,6 +12,7 @@ This directory contains implementations and visualizations of neural network tra
 | <img src="https://github.com/user-attachments/assets/8a028acd-cc9c-4261-9212-163018daf80c" width="400"/> | **Stochastic Gradient Descent** <br> Visualization of SGD optimization: <br> • Random sampling for gradients <br> • Noisy descent trajectory <br> • Exploration vs exploitation |
 | <img src="https://github.com/user-attachments/assets/d39171d2-bcf6-4cea-b2d6-6f2f9b949d82" width="400"/> | **Momentum Gradient Descent** <br> Visualization of momentum-based optimization: <br> • Momentum acceleration effect <br> • Smoother convergence path <br> • Oscillation near minimum |
 | <img src="https://github.com/user-attachments/assets/feba54f8-b84f-4475-b5c7-114ba1e6d9fa" width="400"/> | **AdaGrad Gradient Descent** <br> Visualization of AdaGrad optimization: <br> • Adaptive learning rates <br> • Parameter-specific updates <br> • Efficient early convergence |
+| <img src="https://github.com/user-attachments/assets/19e771fb-c695-4591-b997-056367b79707" width="400"/> | **Nesterov Accelerated Gradient Descent** <br> Visualization of Nesterov optimization: <br> • Look-ahead gradient computation <br> • Enhanced momentum correction <br> • Improved convergence stability |
 | 🎯 Coming soon... | Next visualization here! |
 
 ## 🛠️ Implementation Details
@@ -59,6 +60,14 @@ iterations = 30      # Number of steps
 function = "1/10 * x^2 + y^2"  # Target function
 ```
 
+### Nesterov Gradient Descent Parameters
+```python
+lr = 0.04            # Learning rate for Nesterov
+momentum = 0.9       # Momentum coefficient
+iterations = 30      # Number of steps
+function = "1/10 * x^2 + y^2"  # Target function
+```
+
 ## 📁 Directory Structure
 ```
 20250205/
@@ -68,6 +77,7 @@ function = "1/10 * x^2 + y^2"  # Target function
 ├── stochastic_gradient_descent_2d.ipynb
 ├── momentum_gradient_descent_2d.ipynb
 ├── adagrad_gradient_descent_2d.ipynb
+├── nesterov_gradient_descent_2d.ipynb
 ├── two_layer_net.py
 ├── optimizer.py
 ```
@@ -87,6 +97,9 @@ function = "1/10 * x^2 + y^2"  # Target function
 - AdaGrad adaptive learning rate visualization
 - Parameter-specific learning rate effects
 - Automatic learning rate adjustment
+- Nesterov look-ahead gradient visualization
+- Momentum correction visualization
+- Enhanced convergence stability demonstration
 
 ## 📊 Results
 - Final Training Accuracy: ~94.7%
@@ -100,6 +113,10 @@ function = "1/10 * x^2 + y^2"  # Target function
 - Adaptive learning rates prevent overshooting
 - Final position: (-0.01, 0.00)
 - Minimum value: 0.000001
+- Nesterov shows improved convergence over momentum
+- Look-ahead gradient provides better direction
+- Final position: (-0.02, 0.00)
+- Minimum value: 0.000004
 
 ## 🔍 Key Learning Points
 1. Implementation of backpropagation
@@ -117,6 +134,9 @@ function = "1/10 * x^2 + y^2"  # Target function
 13. Adaptive learning rate optimization
 14. Parameter-specific learning rates
 15. Handling different scale features
+16. Look-ahead gradient computation
+17. Momentum correction in optimization
+18. Nesterov's acceleration technique
 
 ---
 *Part of the MS AI School deep learning curriculum* 
