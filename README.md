@@ -18,7 +18,7 @@ Daily code repository for MS AI School learning journey, focusing on practical i
 |------|-------|-------------|
 | [20250205](./20250205) | Optimization Algorithms | • Gradient Descent variants <br> • Interactive 3D visualizations <br> • Optimization comparisons: <br> - Standard GD <br> - Stochastic GD <br> - Momentum <br> - AdaGrad <br> - Nesterov <br> - RMSprop <br> - Adam |
 | [20250204](./20250204) | Mathematical Visualization | • 2D/3D function visualization <br> • Tangent lines and planes <br> • Gradient visualization |
-| Coming soon... | Next topics | Stay tuned! |
+| 🎯 Coming soon... | Next topics | Stay tuned! |
 
 ## 🛠️ Setup
 
