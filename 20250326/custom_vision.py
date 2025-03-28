@@ -24,12 +24,6 @@ training_client = CustomVisionTrainingClient(training_endpoint, training_credent
 prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
 prediction_client = CustomVisionPredictionClient(prediction_endpoint, prediction_credentials)
 
-# for project in training_client.get_projects():
-#     print(f"PROJECT: {project.id} {project.name}")
-
-# for domain in training_client.get_domains():
-#     print(f"DOMAIN: {domain.id} {domain.name}")
-
 project_name = "6b005-kitchen-compact"
 project_description = "포크와 가위를 감지하는 모델"
 domain_id = None
