@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>별찍기 패턴</title>
+    <style>
+        .star-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .star {
+            display: inline-block;
+            margin: 2px;
+            font-size: 20px;
+            color: #FFD700;
+            text-shadow: 0 0 5px #FFA500;
+            animation: twinkle 1s infinite alternate;
+        }
+        @keyframes twinkle {
+            from { opacity: 0.3; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="star-container">
+        {% for i in range(1, repeat_count + 1) %}
+            <div>
+                {% for j in range(1, i + 1) %}
+                    <span class="star">★</span>
+                {% endfor %}
+            </div>
+        {% endfor %}
+        
+        {% for i in range(repeat_count - 1, 0, -1) %}
+            <div>
+                {% for j in range(1, i + 1) %}
+                    <span class="star">★</span>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
