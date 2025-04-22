@@ -188,3 +188,10 @@ pyrightconfig.json
 
 .gradio/
 *.pem
+
+# SQLite database files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+myproject.db
