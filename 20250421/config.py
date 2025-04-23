@@ -8,4 +8,4 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = True
 
 # 디버그 모드 활성화
-DEBUG = True
+SECRET_KEY = "dev"
